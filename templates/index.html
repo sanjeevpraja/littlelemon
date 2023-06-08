@@ -12,9 +12,53 @@
          <div class="logo"><img src="{% static 'restaurant/logo.png' %}"></div>
          <div class="desc">API</div>
       </div>
-      <ul>
+
+      <div class="login-wrap">
+      <div><span>username</span><span> admin</span></div>
+      <div><span>password</span><span> admin123</span></div>
+      <div><span>token</span><span> c676530a53c1d3101f0d557e3ba23732ef73880c</span></div>
+      </div>
+
+      <ul class="api-list">
          <li>
+            <span class="title">User Registration</span>
+            <span class="method">POST</span>
+            <a href="http://127.0.0.1:8000/auth/users/ ">http://127.0.0.1:8000/auth/users/ </a>
+         </li>
+         <li>
+            <span class="title">Getting token </span>
+            <span class="method">POST</span>
+            <a href="http://127.0.0.1:8000/api/api-token-auth/ ">http://127.0.0.1:8000/api/api-token-auth/ </a>
+         </li>
+         <li>
+            <span class="title">User List</span>
+            <span class="method">GET</span>
             <a href="http://127.0.0.1:8000/api/restaurant/booking/">http://127.0.0.1:8000/api/restaurant/booking/</a>
+         </li>
+         <li>
+            <span class="title">Booking List</span>
+            <span class="method">GET</span>
+            <a href="http://127.0.0.1:8000/api/restaurant/booking/tables/">http://127.0.0.1:8000/api/restaurant/booking/tables/</a>
+         </li>
+         <li>
+            <span class="title">Booking Create</span>
+            <span class="method">POST</span>
+            <a href="http://127.0.0.1:8000/api/restaurant/booking/tables/">http://127.0.0.1:8000/api/restaurant/booking/tables/</a>
+         </li>
+         <li>
+            <span class="title">Menu List</span>
+            <span class="method">GET</span>
+            <a href="http://127.0.0.1:8000/api/menu/">http://127.0.0.1:8000/api/menu/</a>
+         </li>
+         <li>
+            <span class="title">Menu Create</span>
+            <span class="method">POST</span>
+            <a href="http://127.0.0.1:8000/api/menu/">http://127.0.0.1:8000/api/menu/</a>
+         </li>
+         <li>
+            <span class="title">Authentication required</span>
+            <span class="method">GET</span>
+            <a href="http://127.0.0.1:8000/api/message/">http://127.0.0.1:8000/api/message/</a>
          </li>
       </ul>
    </div>
