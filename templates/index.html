@@ -1,10 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
 <html>
    <head>
       <title>Capstone Project</title>
+      <link rel="stylesheet" href="{% static 'restaurant/style.css' %}">
    </head>
    <body>
-      <h1 style="text-align:center;">Welcome ToLittleLemon Restaurant</h1>
-      {% load static %}
-      <img src="{% static 'restaurant/littlelemon.jpg' %}">
+      <div class="main-wrap"v>
+      <h1 class="main-head">Welcome To LittleLemon Restaurant</h1>
+      <div class="banner">
+         <div class="logo"><img src="{% static 'restaurant/logo.png' %}"></div>
+         <div class="desc">API</div>
+      </div>
+      <ul>
+         <li>
+            <a href="http://127.0.0.1:8000/api/restaurant/booking/">http://127.0.0.1:8000/api/restaurant/booking/</a>
+         </li>
+      </ul>
+   </div>
    </body>
 </html>
+

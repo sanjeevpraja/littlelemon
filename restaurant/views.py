@@ -10,9 +10,6 @@ from .serializers import MenuItemSerializer, BookingSerializer
 
 from rest_framework import generics, viewsets
 
-# Create your views here.
-def sayHello(request):
-    return HttpResponse('hello')
 
 def index(request):
     return render(request, 'index.html', {})
